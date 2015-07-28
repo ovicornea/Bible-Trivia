@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CCAA67E1B668708005F97C9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F891B63A94B002D8BD9 /* libsqlite3.dylib */; };
+		8CCAA67F1B66870E005F97C9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F871B63A93D002D8BD9 /* libz.dylib */; };
+		8CCAA6801B668740005F97C9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F851B63A932002D8BD9 /* iAd.framework */; };
+		8CCAA6811B66874B005F97C9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F831B63A92E002D8BD9 /* SystemConfiguration.framework */; };
+		8CCAA6821B668754005F97C9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F811B63A925002D8BD9 /* StoreKit.framework */; };
+		8CCAA6831B66875B005F97C9 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F7F1B63A920002D8BD9 /* Security.framework */; };
+		8CCAA6841B668763005F97C9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F7D1B63A91A002D8BD9 /* QuartzCore.framework */; };
+		8CCAA6851B668773005F97C9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F7B1B63A914002D8BD9 /* CoreLocation.framework */; };
+		8CCAA6871B668778005F97C9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCAA6861B668778005F97C9 /* CoreData.framework */; };
+		8CCAA6881B668780005F97C9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F771B63A909002D8BD9 /* CFNetwork.framework */; };
+		8CCAA6891B668788005F97C9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F751B63A901002D8BD9 /* AudioToolbox.framework */; };
+		8CCAA68A1B66879C005F97C9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F971B63DF8C002D8BD9 /* GameKit.framework */; };
+		8CCAA68C1B6687B2005F97C9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCAA68B1B6687B2005F97C9 /* Bolts.framework */; };
+		8CCAA68E1B6687B6005F97C9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCAA68D1B6687B6005F97C9 /* Parse.framework */; };
+		8CCAA6901B6687BB005F97C9 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCAA68F1B6687BA005F97C9 /* ParseCrashReporting.framework */; };
+		8CCAA6921B6687C0005F97C9 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCAA6911B6687C0005F97C9 /* ParseUI.framework */; };
+		8CF83F501B63A687002D8BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF83F4F1B63A687002D8BD9 /* AppDelegate.swift */; };
+		8CF83F521B63A687002D8BD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF83F511B63A687002D8BD9 /* ViewController.swift */; };
+		8CF83F551B63A687002D8BD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF83F531B63A687002D8BD9 /* Main.storyboard */; };
+		8CF83F571B63A687002D8BD9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CF83F561B63A687002D8BD9 /* Images.xcassets */; };
+		8CF83F5A1B63A687002D8BD9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8CF83F581B63A687002D8BD9 /* LaunchScreen.xib */; };
+		8CF83F661B63A687002D8BD9 /* Bible_TriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF83F651B63A687002D8BD9 /* Bible_TriviaTests.swift */; };
+		8CF83F8E1B63C1F6002D8BD9 /* button.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CF83F8D1B63C1F6002D8BD9 /* button.wav */; };
+		8CF83F911B63C210002D8BD9 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8CF83F8F1B63C210002D8BD9 /* correct.mp3 */; };
+		8CF83F921B63C210002D8BD9 /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CF83F901B63C210002D8BD9 /* wrong.wav */; };
+		8CF83F9A1B643B53002D8BD9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF83F991B643B53002D8BD9 /* Reachability.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CF83F601B63A687002D8BD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CF83F421B63A687002D8BD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CF83F491B63A687002D8BD9;
+			remoteInfo = "Bible Trivia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8C7851081B6617F9006E55BD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		8CCAA6861B668778005F97C9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8CCAA68B1B6687B2005F97C9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Desktop/parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
+		8CCAA68D1B6687B6005F97C9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Desktop/parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
+		8CCAA68F1B6687BA005F97C9 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../../Desktop/parse-library-1.7.5/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		8CCAA6911B6687C0005F97C9 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../Desktop/parse-library-1.7.5/ParseUI.framework"; sourceTree = "<group>"; };
+		8CF83F4A1B63A687002D8BD9 /* Bible Quiz - Do you know your Bible?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible Quiz - Do you know your Bible?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF83F4E1B63A687002D8BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CF83F4F1B63A687002D8BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CF83F511B63A687002D8BD9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CF83F541B63A687002D8BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CF83F561B63A687002D8BD9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8CF83F591B63A687002D8BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		8CF83F5F1B63A687002D8BD9 /* Bible Quiz - Do you know your Bible?Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible Quiz - Do you know your Bible?Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CF83F641B63A687002D8BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CF83F651B63A687002D8BD9 /* Bible_TriviaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bible_TriviaTests.swift; sourceTree = "<group>"; };
+		8CF83F6F1B63A890002D8BD9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../Bolts.framework; sourceTree = "<group>"; };
+		8CF83F701B63A890002D8BD9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../Parse.framework; sourceTree = "<group>"; };
+		8CF83F731B63A8A3002D8BD9 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = ../ParseUI.framework; sourceTree = "<group>"; };
+		8CF83F751B63A901002D8BD9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		8CF83F771B63A909002D8BD9 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		8CF83F791B63A90E002D8BD9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8CF83F7B1B63A914002D8BD9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8CF83F7D1B63A91A002D8BD9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8CF83F7F1B63A920002D8BD9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		8CF83F811B63A925002D8BD9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		8CF83F831B63A92E002D8BD9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		8CF83F851B63A932002D8BD9 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		8CF83F871B63A93D002D8BD9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		8CF83F891B63A94B002D8BD9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		8CF83F8D1B63C1F6002D8BD9 /* button.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button.wav; sourceTree = "<group>"; };
+		8CF83F8F1B63C210002D8BD9 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = correct.mp3; sourceTree = "<group>"; };
+		8CF83F901B63C210002D8BD9 /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
+		8CF83F971B63DF8C002D8BD9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		8CF83F991B643B53002D8BD9 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CF83F471B63A687002D8BD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCAA68A1B66879C005F97C9 /* GameKit.framework in Frameworks */,
+				8CCAA6891B668788005F97C9 /* AudioToolbox.framework in Frameworks */,
+				8CCAA6881B668780005F97C9 /* CFNetwork.framework in Frameworks */,
+				8CCAA6871B668778005F97C9 /* CoreData.framework in Frameworks */,
+				8CCAA6851B668773005F97C9 /* CoreLocation.framework in Frameworks */,
+				8CCAA6841B668763005F97C9 /* QuartzCore.framework in Frameworks */,
+				8CCAA6831B66875B005F97C9 /* Security.framework in Frameworks */,
+				8CCAA6821B668754005F97C9 /* StoreKit.framework in Frameworks */,
+				8CCAA6811B66874B005F97C9 /* SystemConfiguration.framework in Frameworks */,
+				8CCAA6801B668740005F97C9 /* iAd.framework in Frameworks */,
+				8CCAA68C1B6687B2005F97C9 /* Bolts.framework in Frameworks */,
+				8CCAA68E1B6687B6005F97C9 /* Parse.framework in Frameworks */,
+				8CCAA6901B6687BB005F97C9 /* ParseCrashReporting.framework in Frameworks */,
+				8CCAA6921B6687C0005F97C9 /* ParseUI.framework in Frameworks */,
+				8CCAA67F1B66870E005F97C9 /* libz.dylib in Frameworks */,
+				8CCAA67E1B668708005F97C9 /* libsqlite3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF83F5C1B63A687002D8BD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CF83F411B63A687002D8BD9 = {
+			isa = PBXGroup;
+			children = (
+				8CCAA6911B6687C0005F97C9 /* ParseUI.framework */,
+				8CCAA68F1B6687BA005F97C9 /* ParseCrashReporting.framework */,
+				8CCAA68D1B6687B6005F97C9 /* Parse.framework */,
+				8CCAA68B1B6687B2005F97C9 /* Bolts.framework */,
+				8CCAA6861B668778005F97C9 /* CoreData.framework */,
+				8CF83F971B63DF8C002D8BD9 /* GameKit.framework */,
+				8CF83F4C1B63A687002D8BD9 /* Bible Trivia */,
+				8CF83F621B63A687002D8BD9 /* Bible TriviaTests */,
+				8CF83F4B1B63A687002D8BD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF83F4B1B63A687002D8BD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CF83F4A1B63A687002D8BD9 /* Bible Quiz - Do you know your Bible?.app */,
+				8CF83F5F1B63A687002D8BD9 /* Bible Quiz - Do you know your Bible?Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CF83F4C1B63A687002D8BD9 /* Bible Trivia */ = {
+			isa = PBXGroup;
+			children = (
+				8CF83F4F1B63A687002D8BD9 /* AppDelegate.swift */,
+				8CF83F511B63A687002D8BD9 /* ViewController.swift */,
+				8CF83F531B63A687002D8BD9 /* Main.storyboard */,
+				8CF83F561B63A687002D8BD9 /* Images.xcassets */,
+				8CF83F581B63A687002D8BD9 /* LaunchScreen.xib */,
+				8CF83F4D1B63A687002D8BD9 /* Supporting Files */,
+			);
+			path = "Bible Trivia";
+			sourceTree = "<group>";
+		};
+		8CF83F4D1B63A687002D8BD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CF83F991B643B53002D8BD9 /* Reachability.swift */,
+				8CF83F941B63C230002D8BD9 /* Frameworks */,
+				8CF83F931B63C216002D8BD9 /* Sounds */,
+				8CF83F4E1B63A687002D8BD9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CF83F621B63A687002D8BD9 /* Bible TriviaTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CF83F651B63A687002D8BD9 /* Bible_TriviaTests.swift */,
+				8CF83F631B63A687002D8BD9 /* Supporting Files */,
+			);
+			path = "Bible TriviaTests";
+			sourceTree = "<group>";
+		};
+		8CF83F631B63A687002D8BD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CF83F641B63A687002D8BD9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8CF83F931B63C216002D8BD9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				8CF83F8D1B63C1F6002D8BD9 /* button.wav */,
+				8CF83F901B63C210002D8BD9 /* wrong.wav */,
+				8CF83F8F1B63C210002D8BD9 /* correct.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		8CF83F941B63C230002D8BD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8CF83F891B63A94B002D8BD9 /* libsqlite3.dylib */,
+				8CF83F871B63A93D002D8BD9 /* libz.dylib */,
+				8C7851081B6617F9006E55BD /* ParseCrashReporting.framework */,
+				8CF83F851B63A932002D8BD9 /* iAd.framework */,
+				8CF83F831B63A92E002D8BD9 /* SystemConfiguration.framework */,
+				8CF83F811B63A925002D8BD9 /* StoreKit.framework */,
+				8CF83F7F1B63A920002D8BD9 /* Security.framework */,
+				8CF83F7D1B63A91A002D8BD9 /* QuartzCore.framework */,
+				8CF83F7B1B63A914002D8BD9 /* CoreLocation.framework */,
+				8CF83F791B63A90E002D8BD9 /* CoreGraphics.framework */,
+				8CF83F771B63A909002D8BD9 /* CFNetwork.framework */,
+				8CF83F751B63A901002D8BD9 /* AudioToolbox.framework */,
+				8CF83F731B63A8A3002D8BD9 /* ParseUI.framework */,
+				8CF83F6F1B63A890002D8BD9 /* Bolts.framework */,
+				8CF83F701B63A890002D8BD9 /* Parse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CF83F491B63A687002D8BD9 /* Bible Quiz - Do you know your Bible? */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF83F691B63A687002D8BD9 /* Build configuration list for PBXNativeTarget "Bible Quiz - Do you know your Bible?" */;
+			buildPhases = (
+				8CF83F461B63A687002D8BD9 /* Sources */,
+				8CF83F471B63A687002D8BD9 /* Frameworks */,
+				8CF83F481B63A687002D8BD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bible Quiz - Do you know your Bible?";
+			productName = "Bible Trivia";
+			productReference = 8CF83F4A1B63A687002D8BD9 /* Bible Quiz - Do you know your Bible?.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CF83F5E1B63A687002D8BD9 /* Bible Quiz - Do you know your Bible?Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CF83F6C1B63A687002D8BD9 /* Build configuration list for PBXNativeTarget "Bible Quiz - Do you know your Bible?Tests" */;
+			buildPhases = (
+				8CF83F5B1B63A687002D8BD9 /* Sources */,
+				8CF83F5C1B63A687002D8BD9 /* Frameworks */,
+				8CF83F5D1B63A687002D8BD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CF83F611B63A687002D8BD9 /* PBXTargetDependency */,
+			);
+			name = "Bible Quiz - Do you know your Bible?Tests";
+			productName = "Bible TriviaTests";
+			productReference = 8CF83F5F1B63A687002D8BD9 /* Bible Quiz - Do you know your Bible?Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CF83F421B63A687002D8BD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Hope for the Future";
+				TargetAttributes = {
+					8CF83F491B63A687002D8BD9 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 6V3HUAT7D4;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
+					8CF83F5E1B63A687002D8BD9 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 8CF83F491B63A687002D8BD9;
+					};
+				};
+			};
+			buildConfigurationList = 8CF83F451B63A687002D8BD9 /* Build configuration list for PBXProject "Bible Quiz - Do you know your Bible?" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CF83F411B63A687002D8BD9;
+			productRefGroup = 8CF83F4B1B63A687002D8BD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CF83F491B63A687002D8BD9 /* Bible Quiz - Do you know your Bible? */,
+				8CF83F5E1B63A687002D8BD9 /* Bible Quiz - Do you know your Bible?Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CF83F481B63A687002D8BD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF83F911B63C210002D8BD9 /* correct.mp3 in Resources */,
+				8CF83F551B63A687002D8BD9 /* Main.storyboard in Resources */,
+				8CF83F5A1B63A687002D8BD9 /* LaunchScreen.xib in Resources */,
+				8CF83F8E1B63C1F6002D8BD9 /* button.wav in Resources */,
+				8CF83F921B63C210002D8BD9 /* wrong.wav in Resources */,
+				8CF83F571B63A687002D8BD9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF83F5D1B63A687002D8BD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CF83F461B63A687002D8BD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF83F521B63A687002D8BD9 /* ViewController.swift in Sources */,
+				8CF83F501B63A687002D8BD9 /* AppDelegate.swift in Sources */,
+				8CF83F9A1B643B53002D8BD9 /* Reachability.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CF83F5B1B63A687002D8BD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF83F661B63A687002D8BD9 /* Bible_TriviaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CF83F611B63A687002D8BD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CF83F491B63A687002D8BD9 /* Bible Quiz - Do you know your Bible? */;
+			targetProxy = 8CF83F601B63A687002D8BD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CF83F531B63A687002D8BD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF83F541B63A687002D8BD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CF83F581B63A687002D8BD9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CF83F591B63A687002D8BD9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CF83F671B63A687002D8BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CF83F681B63A687002D8BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CF83F6A1B63A687002D8BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Bible",
+					Trivia,
+					"$(PROJECT_DIR)/Bible",
+					Trivia,
+					"/Users/Ovi/Desktop/parse-library-1.7.5",
+				);
+				INFOPLIST_FILE = "Bible Trivia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Bible Quiz - Do you know your Bible?";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		8CF83F6B1B63A687002D8BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Bible",
+					Trivia,
+					"$(PROJECT_DIR)/Bible",
+					Trivia,
+					"/Users/Ovi/Desktop/parse-library-1.7.5",
+				);
+				INFOPLIST_FILE = "Bible Trivia/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Bible Quiz - Do you know your Bible?";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		8CF83F6D1B63A687002D8BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bible TriviaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Bible Quiz - Do you know your Bible?Tests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Quiz - Do you know your Bible?.app/Bible Quiz - Do you know your Bible?";
+			};
+			name = Debug;
+		};
+		8CF83F6E1B63A687002D8BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bible TriviaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "Bible Quiz - Do you know your Bible?Tests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Quiz - Do you know your Bible?.app/Bible Quiz - Do you know your Bible?";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CF83F451B63A687002D8BD9 /* Build configuration list for PBXProject "Bible Quiz - Do you know your Bible?" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF83F671B63A687002D8BD9 /* Debug */,
+				8CF83F681B63A687002D8BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF83F691B63A687002D8BD9 /* Build configuration list for PBXNativeTarget "Bible Quiz - Do you know your Bible?" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF83F6A1B63A687002D8BD9 /* Debug */,
+				8CF83F6B1B63A687002D8BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CF83F6C1B63A687002D8BD9 /* Build configuration list for PBXNativeTarget "Bible Quiz - Do you know your Bible?Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CF83F6D1B63A687002D8BD9 /* Debug */,
+				8CF83F6E1B63A687002D8BD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CF83F421B63A687002D8BD9 /* Project object */;
+}
