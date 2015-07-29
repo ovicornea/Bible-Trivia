@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C3543501B67D15A00C728D2 /* buttongrey.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C35434F1B67D15A00C728D2 /* buttongrey.png */; };
+		8C824A3D1B68A4B400B6E8BD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F6F1B63A890002D8BD9 /* Bolts.framework */; };
+		8C824A3E1B68A4B400B6E8BD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F701B63A890002D8BD9 /* Parse.framework */; };
+		8C824A3F1B68A4B400B6E8BD /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F731B63A8A3002D8BD9 /* ParseUI.framework */; };
+		8C824A411B68A4B500B6E8BD /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C824A401B68A4B500B6E8BD /* ParseCrashReporting.framework */; };
 		8CCAA67E1B668708005F97C9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F891B63A94B002D8BD9 /* libsqlite3.dylib */; };
 		8CCAA67F1B66870E005F97C9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F871B63A93D002D8BD9 /* libz.dylib */; };
 		8CCAA6801B668740005F97C9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F851B63A932002D8BD9 /* iAd.framework */; };
@@ -19,10 +24,6 @@
 		8CCAA6881B668780005F97C9 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F771B63A909002D8BD9 /* CFNetwork.framework */; };
 		8CCAA6891B668788005F97C9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F751B63A901002D8BD9 /* AudioToolbox.framework */; };
 		8CCAA68A1B66879C005F97C9 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F971B63DF8C002D8BD9 /* GameKit.framework */; };
-		8CCAA68C1B6687B2005F97C9 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCAA68B1B6687B2005F97C9 /* Bolts.framework */; };
-		8CCAA68E1B6687B6005F97C9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCAA68D1B6687B6005F97C9 /* Parse.framework */; };
-		8CCAA6901B6687BB005F97C9 /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCAA68F1B6687BA005F97C9 /* ParseCrashReporting.framework */; };
-		8CCAA6921B6687C0005F97C9 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CCAA6911B6687C0005F97C9 /* ParseUI.framework */; };
 		8CF83F501B63A687002D8BD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF83F4F1B63A687002D8BD9 /* AppDelegate.swift */; };
 		8CF83F521B63A687002D8BD9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CF83F511B63A687002D8BD9 /* ViewController.swift */; };
 		8CF83F551B63A687002D8BD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF83F531B63A687002D8BD9 /* Main.storyboard */; };
@@ -46,12 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C35434F1B67D15A00C728D2 /* buttongrey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttongrey.png; sourceTree = "<group>"; };
 		8C7851081B6617F9006E55BD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		8C824A351B68A40000B6E8BD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Desktop/parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
+		8C824A371B68A40500B6E8BD /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Desktop/parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
+		8C824A391B68A40800B6E8BD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../../Desktop/parse-library-1.7.5/ParseCrashReporting.framework"; sourceTree = "<group>"; };
+		8C824A3B1B68A40B00B6E8BD /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../Desktop/parse-library-1.7.5/ParseUI.framework"; sourceTree = "<group>"; };
+		8C824A401B68A4B500B6E8BD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		8CCAA6861B668778005F97C9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		8CCAA68B1B6687B2005F97C9 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Desktop/parse-library-1.7.5/Bolts.framework"; sourceTree = "<group>"; };
-		8CCAA68D1B6687B6005F97C9 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Desktop/parse-library-1.7.5/Parse.framework"; sourceTree = "<group>"; };
-		8CCAA68F1B6687BA005F97C9 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../../Desktop/parse-library-1.7.5/ParseCrashReporting.framework"; sourceTree = "<group>"; };
-		8CCAA6911B6687C0005F97C9 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../Desktop/parse-library-1.7.5/ParseUI.framework"; sourceTree = "<group>"; };
 		8CF83F4A1B63A687002D8BD9 /* Bible Quiz - Do you know your Bible?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible Quiz - Do you know your Bible?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF83F4E1B63A687002D8BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CF83F4F1B63A687002D8BD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +93,10 @@
 			files = (
 				8CCAA68A1B66879C005F97C9 /* GameKit.framework in Frameworks */,
 				8CCAA6891B668788005F97C9 /* AudioToolbox.framework in Frameworks */,
+				8C824A411B68A4B500B6E8BD /* ParseCrashReporting.framework in Frameworks */,
+				8C824A3D1B68A4B400B6E8BD /* Bolts.framework in Frameworks */,
+				8C824A3E1B68A4B400B6E8BD /* Parse.framework in Frameworks */,
+				8C824A3F1B68A4B400B6E8BD /* ParseUI.framework in Frameworks */,
 				8CCAA6881B668780005F97C9 /* CFNetwork.framework in Frameworks */,
 				8CCAA6871B668778005F97C9 /* CoreData.framework in Frameworks */,
 				8CCAA6851B668773005F97C9 /* CoreLocation.framework in Frameworks */,
@@ -98,10 +105,6 @@
 				8CCAA6821B668754005F97C9 /* StoreKit.framework in Frameworks */,
 				8CCAA6811B66874B005F97C9 /* SystemConfiguration.framework in Frameworks */,
 				8CCAA6801B668740005F97C9 /* iAd.framework in Frameworks */,
-				8CCAA68C1B6687B2005F97C9 /* Bolts.framework in Frameworks */,
-				8CCAA68E1B6687B6005F97C9 /* Parse.framework in Frameworks */,
-				8CCAA6901B6687BB005F97C9 /* ParseCrashReporting.framework in Frameworks */,
-				8CCAA6921B6687C0005F97C9 /* ParseUI.framework in Frameworks */,
 				8CCAA67F1B66870E005F97C9 /* libz.dylib in Frameworks */,
 				8CCAA67E1B668708005F97C9 /* libsqlite3.dylib in Frameworks */,
 			);
@@ -120,12 +123,11 @@
 		8CF83F411B63A687002D8BD9 = {
 			isa = PBXGroup;
 			children = (
-				8CCAA6911B6687C0005F97C9 /* ParseUI.framework */,
-				8CCAA68F1B6687BA005F97C9 /* ParseCrashReporting.framework */,
-				8CCAA68D1B6687B6005F97C9 /* Parse.framework */,
-				8CCAA68B1B6687B2005F97C9 /* Bolts.framework */,
-				8CCAA6861B668778005F97C9 /* CoreData.framework */,
-				8CF83F971B63DF8C002D8BD9 /* GameKit.framework */,
+				8C824A401B68A4B500B6E8BD /* ParseCrashReporting.framework */,
+				8C824A3B1B68A40B00B6E8BD /* ParseUI.framework */,
+				8C824A391B68A40800B6E8BD /* ParseCrashReporting.framework */,
+				8C824A371B68A40500B6E8BD /* Parse.framework */,
+				8C824A351B68A40000B6E8BD /* Bolts.framework */,
 				8CF83F4C1B63A687002D8BD9 /* Bible Trivia */,
 				8CF83F621B63A687002D8BD9 /* Bible TriviaTests */,
 				8CF83F4B1B63A687002D8BD9 /* Products */,
@@ -157,6 +159,7 @@
 		8CF83F4D1B63A687002D8BD9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8C35434F1B67D15A00C728D2 /* buttongrey.png */,
 				8CF83F991B643B53002D8BD9 /* Reachability.swift */,
 				8CF83F941B63C230002D8BD9 /* Frameworks */,
 				8CF83F931B63C216002D8BD9 /* Sounds */,
@@ -197,6 +200,8 @@
 			children = (
 				8CF83F891B63A94B002D8BD9 /* libsqlite3.dylib */,
 				8CF83F871B63A93D002D8BD9 /* libz.dylib */,
+				8CF83F971B63DF8C002D8BD9 /* GameKit.framework */,
+				8CCAA6861B668778005F97C9 /* CoreData.framework */,
 				8C7851081B6617F9006E55BD /* ParseCrashReporting.framework */,
 				8CF83F851B63A932002D8BD9 /* iAd.framework */,
 				8CF83F831B63A92E002D8BD9 /* SystemConfiguration.framework */,
@@ -305,6 +310,7 @@
 				8CF83F5A1B63A687002D8BD9 /* LaunchScreen.xib in Resources */,
 				8CF83F8E1B63C1F6002D8BD9 /* button.wav in Resources */,
 				8CF83F921B63C210002D8BD9 /* wrong.wav in Resources */,
+				8C3543501B67D15A00C728D2 /* buttongrey.png in Resources */,
 				8CF83F571B63A687002D8BD9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -31,7 +31,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var button4: UIButton!
     
     
-    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var feedbackLabel: UILabel!
@@ -79,86 +78,6 @@ class ViewController: UIViewController {
         loadScore()
         adjustInterface()
         
-        var objectsIdsQuery = PFQuery(className: "Level_1")
-        
-        objectsIdsQuery.findObjectsInBackgroundWithBlock({
-            (objectsArray: [AnyObject]?, error: NSError?) -> Void in
-            
-            let objectsIDs = objectsArray as! [PFObject]
-            
-            for i in 0..<objectsIDs.count {
-                
-                self.objectsIDsArray.append(objectsIDs[i].objectId!)
-                
-                //Here we get the objectId's from the "level_1" class on Parse
-               // println(self.objectsIDsArray)
-                
-                
-                
-            }
-            
-        })
-        
-        // MARK: - AICI AM REUSIT SA SCOT INTREBARILE DIN PARSE SI SA LE SALVEZ INTR-UN ARRAY IN SWIFT, SPER OFFLINE.
-        
-        var questionsArray = [String]()
-        var query2 = PFQuery(className: "Level_2")
-        var user2 = PFUser.currentUser()
-        
-        var question2 =  String()
-    
-        
-        query2.findObjectsInBackgroundWithBlock {
-            (question: [AnyObject]?, error: NSError?) -> Void in
-            
-            var questions = question as! [PFObject]
-            
-            for i in 0..<questions.count {
-                
-                questionsArray.append(questions[i].objectForKey("Question")! as! String)
-                
-            }
-            
-            var questionText = ""
-            
-            //println(questionsArray)
-            
-            //println(questionsArray[1])
-            
-            
-            //iterate through this array
-            for i in 0..<questionsArray.count {
-                
-                //println("\(questionsArray[i])")
-                
-                questionText = questionsArray[i] as String
-                
-                //println(questionText)
-                
-                
-            }
-
-                
-            }
-            
-            
-            
-            
-        
-            
-            
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "test:", name:"loadquestions", object: nil)
 
         
@@ -167,7 +86,7 @@ class ViewController: UIViewController {
                 
                 self.resetAnswerButtons()
                 self.internetConnection = true
-                //self.callQuestions()
+                self.callQuestions()
                 //internet is reachable via wifi or cellular
                 
             }
@@ -196,44 +115,6 @@ class ViewController: UIViewController {
         
       
     }
-    
-    
-//    func callOfflineQuestions() {
-//        
-//            var randomNumber = Int(arc4random_uniform(UInt32(objectsIDsArray.count)))
-//        
-//        
-//            var query = PFQuery(className: "Level_1")
-//        
-//            query.getObjectInBackgroundWithId(objectsIDsArray[randomNumber]) {
-//                (objects: PFObject?, error: NSError?) -> Void in
-//            
-//            if error == nil {
-//                
-//            var object = self.objectsIDsArray[0]
-//                
-//                println(object)
-//   
-////               self.question = object ["Question"] as! String
-////               self.answers = object ["Answers"] as! Array
-////               self.answer = object ["Answer"] as! String
-////            
-////                
-////                if (self.answers.count > 0) {
-////                    
-////                    self.questionLabel.text = self.question
-////                    
-////                    self.button1.setTitle(self.answers[0], forState: .Normal)
-////                    self.button2.setTitle(self.answers[1], forState: .Normal)
-////                    self.button3.setTitle(self.answers[2], forState: .Normal)
-////                    self.button4.setTitle(self.answers[3], forState: .Normal)
-////                }
-//            }
-//            
-//            }
-//                            
-//        }
- 
   
     func test(notification: NSNotification) {
         
@@ -269,7 +150,7 @@ class ViewController: UIViewController {
     
     func resetAlert() {
         
-        let alert = UIAlertController(title: "Are you sure you want to reset?", message: "Continuing will delete all your score.", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Are you sure you want to reset?", message: "Continuing will reset your score.", preferredStyle: .Alert)
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
         let okAction = UIAlertAction(title: "OK", style: .Default) { (UIAlertAction) -> Void in
@@ -320,9 +201,9 @@ class ViewController: UIViewController {
                             self.questionLabel.text = self.question
                             
                             self.button1.setTitle(self.answers[0], forState: .Normal)
-                            self.button2.setTitle(self.answers[1], forState: .Normal)
-                            self.button3.setTitle(self.answers[2], forState: .Normal)
-                            self.button4.setTitle(self.answers[3], forState: .Normal)
+                            self.button2.setTitle(self.answers[1], forState: UIControlState.Normal)
+                            self.button3.setTitle(self.answers[2], forState: UIControlState.Normal)
+                            self.button4.setTitle(self.answers[3], forState: UIControlState.Normal)
                             
                             NSNotificationCenter.defaultCenter().postNotificationName("loadquestions", object: nil)
         

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F436908C-5096-497F-B634-BA8E1F53F752</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Bible Quiz - Do you know your Bible?</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C6C582DACF1DEFAF042B560C5B3FEDD8E54DA7F4</key>
+		<string>https://github.com/ovicornea/Bible-Trivia.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Bible Quiz - Do you know your Bible?.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C6C582DACF1DEFAF042B560C5B3FEDD8E54DA7F4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ovicornea/Bible-Trivia.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C6C582DACF1DEFAF042B560C5B3FEDD8E54DA7F4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C6C582DACF1DEFAF042B560C5B3FEDD8E54DA7F4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Bible%20Trivia</string>
+		</dict>
+	</array>
+</dict>
+</plist>
