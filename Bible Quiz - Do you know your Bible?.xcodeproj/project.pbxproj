@@ -12,6 +12,7 @@
 		8C824A3E1B68A4B400B6E8BD /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F701B63A890002D8BD9 /* Parse.framework */; };
 		8C824A3F1B68A4B400B6E8BD /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F731B63A8A3002D8BD9 /* ParseUI.framework */; };
 		8C824A411B68A4B500B6E8BD /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C824A401B68A4B500B6E8BD /* ParseCrashReporting.framework */; };
+		8CB1BE131B6A326000AA1E8D /* Parse2Core.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CB1BE111B6A326000AA1E8D /* Parse2Core.xcdatamodeld */; };
 		8CCAA67E1B668708005F97C9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F891B63A94B002D8BD9 /* libsqlite3.dylib */; };
 		8CCAA67F1B66870E005F97C9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F871B63A93D002D8BD9 /* libz.dylib */; };
 		8CCAA6801B668740005F97C9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF83F851B63A932002D8BD9 /* iAd.framework */; };
@@ -54,6 +55,7 @@
 		8C824A391B68A40800B6E8BD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseCrashReporting.framework; path = "../../../Desktop/parse-library-1.7.5/ParseCrashReporting.framework"; sourceTree = "<group>"; };
 		8C824A3B1B68A40B00B6E8BD /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "../../../Desktop/parse-library-1.7.5/ParseUI.framework"; sourceTree = "<group>"; };
 		8C824A401B68A4B500B6E8BD /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		8CB1BE121B6A326000AA1E8D /* Parse2Core.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Parse2Core.xcdatamodel; sourceTree = "<group>"; };
 		8CCAA6861B668778005F97C9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8CF83F4A1B63A687002D8BD9 /* Bible Quiz - Do you know your Bible?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible Quiz - Do you know your Bible?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF83F4E1B63A687002D8BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				8CF83F561B63A687002D8BD9 /* Images.xcassets */,
 				8CF83F581B63A687002D8BD9 /* LaunchScreen.xib */,
 				8CF83F4D1B63A687002D8BD9 /* Supporting Files */,
+				8CB1BE111B6A326000AA1E8D /* Parse2Core.xcdatamodeld */,
 			);
 			path = "Bible Trivia";
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF83F521B63A687002D8BD9 /* ViewController.swift in Sources */,
+				8CB1BE131B6A326000AA1E8D /* Parse2Core.xcdatamodeld in Sources */,
 				8CF83F501B63A687002D8BD9 /* AppDelegate.swift in Sources */,
 				8CF83F9A1B643B53002D8BD9 /* Reachability.swift in Sources */,
 			);
@@ -565,6 +569,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8CB1BE111B6A326000AA1E8D /* Parse2Core.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8CB1BE121B6A326000AA1E8D /* Parse2Core.xcdatamodel */,
+			);
+			currentVersion = 8CB1BE121B6A326000AA1E8D /* Parse2Core.xcdatamodel */;
+			path = Parse2Core.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8CF83F421B63A687002D8BD9 /* Project object */;
 }

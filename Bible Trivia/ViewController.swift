@@ -10,6 +10,7 @@ import UIKit
 import Parse
 import AVFoundation
 import Dispatch
+import CoreData
 
 class ViewController: UIViewController {
     
@@ -75,6 +76,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        storeLevel1FromParseToCore()
+        
         loadScore()
         adjustInterface()
         
@@ -112,8 +115,49 @@ class ViewController: UIViewController {
             internetIsNotReachable()
         }
 
-        
       
+    }
+    
+    func storeLevel1FromParseToCore() {
+        
+        let appDel = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let context:NSManagedObjectContext = appDel.managedObjectContext!
+        
+        var entity = NSEntityDescription.entityForName("Level1", inManagedObjectContext: context)
+        
+       
+        
+        let insertNew = NSEntityDescription.insertNewObjectForEntityForName("Level1", inManagedObjectContext: context) as! NSManagedObject
+        
+        let query = PFQuery(className: "Level_1")
+        query.selectKeys(["Question","Answer", "Answers"])
+        
+        query.findObjectsInBackgroundWithBlock({(level1Objects: [AnyObject]?, error: NSError?)-> Void in
+            
+            if error == nil {
+                
+                for obj: AnyObject in level1Objects! {
+                    
+                    //println(level1Objects!.count)
+                    
+                    insertNew.setValue(obj.objectForKey("Question"), forKey: "question")
+                    insertNew.setValue(obj.objectForKey("Answer"), forKey: "answer")
+                    //insertNew.setValue(obj.objectForKey("Answers"), forKey: "answers1")
+                    
+                    context.save(nil)
+                    
+                    let correctAnswer = obj.objectForKey("Answer") as! String
+                    let question = obj.objectForKey("Question") as! String
+                    //let wrongAnswer = obj.objectForKey("Answers") as! String
+                    
+                    println(correctAnswer)
+                    //println(question)
+                    //println(wrongAnswer)
+                    
+                }
+            }
+        })
     }
   
     func test(notification: NSNotification) {
